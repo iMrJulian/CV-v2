@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgb(199, 230, 238), rgb(230, 239, 241));
+}
+.hoja-vida{
+    margin: 30px;
+    /* text-align: center; */
+    border: 1px solid #d9dadc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #d9dadc;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #A3A6A7;
+}
+.header img{
+    width: 200px;
+    position: relative;
+    right: 195px;
+}
+.header-h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    right: 200px;  
+    color: white;
+}
+
+.info{
+    display: flex;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #E2E2E2;
+}
+.habilidades-p{
+    width: 400px;
+}
+
+.habilidades ul li{
+    /* list-style: none; */
+    position: relative;
+    right: 20px;
+}
+
+.education{
+    padding: 30px;
+}
+
+.education-experience{
+    width: 800px;
+}
+
+.education ul li{
+    position: relative;
+    right: 20px;
+}
+
+.education a {
+    text-decoration: none;
+}
+.education a:hover{
+    text-decoration: underline;
+}
+
