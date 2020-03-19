@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
- 		<title>Sample page</title>
+ 		<title>Formulario</title>
  		<meta charset="UTF-8">
  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<style>
+				body {
+					margin: 5%;
+				}
+		</style>
 	</head>
 	<body>
-		<form>
+	<h1>Formulario de hoja de vida</h1>
+	<form>
   <div class="form-row">
     <div class="form-group col-md-5">
       <label for="inputNombre4">Nombre</label>
@@ -14,7 +20,7 @@
     </div>
     <div class="form-group col-md-5">
       <label for="inputEmail">Email</label>
-      <input type="Email" class="form-control" id="inputEmail" placeholder="Email">
+      <input type="text" class="form-control" id="inputEmail" placeholder="Email">
     </div>
     <div class="form-group col-md-2">
       <label for="inputEdad">Edad</label>
@@ -30,11 +36,11 @@
     	<label for="inputTelefono">Telefono</label>
     	<input type="text" class="form-control" id="inputTelefono" placeholder="Numero de Telefono">
     </div>
-    <div class="form-group col-md-4">
-    	<label for="inputPerfil">Perfil profesional</label>
-    	<input type="text" class="form-control" id="inputPerfil" placeholder="Perfil profesional">
-    </div>
   </div>
+	<div class="form-group">
+    	<label for="inputPerfil">Perfil profesional</label>
+    	<textarea class="form-control" id="inputPerfil" placeholder="Perfil profesional"></textarea>
+    </div>
   <div class="form-row">
     <div class="form-group col-md-3">
       <label for="inputCiudad">Ciudad</label>
@@ -44,11 +50,12 @@
       <label for="inputDireccion">Direccion</label>
       <input type="text" class="form-control" id="inputDireccion" placeholder="Direccion">
     </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
   </div>
+  <div class="form-group">
+   		<label for="inputHabilidades">Habilidades</label>
+      	<textarea type="text" class="form-control" id="inputHabilidades" placeholder="Habilidades"></textarea>
+   </div>
+   </form>
   <div class="form-row">
     <div class="form-group col-md-3">
       <label for="inputIdioma1">Idioma</label>
@@ -58,26 +65,25 @@
       <label for="inputNivel1">Nivel</label>
       <input type="text" class="form-control" id="inputNivel1" placeholder="Nivel">
     </div>
+   </div>
+   <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="inputIdioma2">Idioma</label>
       <input type="text" class="form-control" id="inputIdioma2" placeholder="Idioma">
     </div>
     <div class="form-group col-md-2">
-      <label for="inputNivel2">Nivel</label>
       <input type="text" class="form-control" id="inputNivel2" placeholder="Nivel">
     </div>
    </div>
    <div class="form-group">
    		<label for="inputEstudios">Estudios</label>
-      	<input type="text" class="form-control" id="inputEstudios" placeholder="Estudios">
+      	<textarea type="text" class="form-control" id="inputEstudios" placeholder="Estudios"></textarea>
    </div>
    <div class="form-group">
    		<label for="inputExperencia">Experiencia</label>
-      	<input type="text" class="form-control" id="inputExperencia" placeholder="Experiencia">
+      	<textarea type="text" class="form-control" id="inputExperiencia" placeholder="Experiencia"></textarea>
    </div>
-  <button type="submit" class="btn btn-primary" id="btnSubmit"> Ingresar datos</button>
-</form>
+   </form>
+  <button class="btn btn-primary" id="btnSubmit">Ingresar datos</button>
 	<script src="registro.js"></script>
-	<script src="mostrar.js"></script>
 	</body>
 </html>

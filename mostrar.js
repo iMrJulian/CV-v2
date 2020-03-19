@@ -1,3 +1,24 @@
-function llenar(){
-	
-}
+var nombre = JSON.parse(localStorage.getItem("nombre")),
+	email = JSON.parse(localStorage.getItem("email")),
+	edad = JSON.parse(localStorage.getItem("edad")),
+	celular = JSON.parse(localStorage.getItem("celular")),
+	telefono = JSON.parse(localStorage.getItem("telefono")),
+	perfil = JSON.parse(localStorage.getItem("perfil")),
+	ciudad = JSON.parse(localStorage.getItem("ciudad")),
+	direccion = JSON.parse(localStorage.getItem("direccion")),
+	habilidades = JSON.parse(localStorage.getItem("habilidades")),
+	idioma = JSON.parse(localStorage.getItem("idioma")),
+	nivel = JSON.parse(localStorage.getItem("nivel")),
+	idioma1 = JSON.parse(localStorage.getItem("idioma1")),
+	nivel1 = JSON.parse(localStorage.getItem("nivel1")),
+	estudios = JSON.parse(localStorage.getItem("estudios")),
+	experiencia = JSON.parse(localStorage.getItem("experiencia"));
+
+document.getElementById("titu").innerHTML = "CV " + nombre;
+document.getElementById("nomYA").innerHTML = nombre;
+document.getElementById("perP").innerHTML = perfil;
+document.getElementById("Habilidades").innerHTML = habilidades;
+document.getElementById("Idiomas").innerHTML = "<ul><li>" + idioma + " " + nivel + "</li><li>" + idioma1 + " " + nivel1 + "</li></ul>";
+document.getElementById("EduE").innerHTML = estudios;
+document.getElementById("Exps").innerHTML = experiencia;
+document.getElementById("con").innerHTML = "<ul><li>Celular: " + celular + "</li><li> Telefono: " + telefono + "</li><li> Direccion: " + ciudad + ", " + direccion + "</li></ul>";
